@@ -1,0 +1,109 @@
+:root {
+  --deep-black: #121212;
+  --gold-accent: #eabf49;
+  --soft-white: #f7f7f7;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--deep-black);
+  color: var(--soft-white);
+}
+
+/* Header */
+header {
+  background: var(--card-bg);
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  color: var(--gold-accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: var(--soft-white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--gold-accent);
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom right, #242424, #181818);
+  border-bottom: 1px solid #333;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: var(--gold-accent);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Grid Showcase */
+.grid-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(234,191,73,0.4);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--gold-accent);
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--soft-white);
+}
+
+/* Footer */
+footer {
+  background-color: #101010;
+  color: var(--soft-white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
